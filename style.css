@@ -69,6 +69,10 @@ body{
 #results #stats{
    width: 65%;
    background: linear-gradient(#6ba6f9, #1ca2e3);
+   font-size: 25px;
+}
+#stats div{
+   padding: 10px;
 }
 #results::after{
    content: '';

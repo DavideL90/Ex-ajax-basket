@@ -6,11 +6,13 @@
 body{
    height: 100vh;
    width: 100vw;
+   background: radial-gradient(#693824, #a25737);
 }
 
 /* General container */
 #player-cnt{
    width: 880px;
+   height: 650px;
    margin: 50px auto;
 }
 
@@ -18,7 +20,9 @@ body{
 #player-cnt #request{
    border: 1px solid black;
    text-align: center;
-   padding: 10px 0;
+   padding: 25px 0;
+   height: 20%;
+   background: linear-gradient(#efeaef, #d9cbd7);
 }
 #request h3{
    margin-bottom: 20px;
@@ -37,14 +41,34 @@ body{
 }
 
 /* Container with results from above */
+#results{
+   height: 80%;
+}
 #results #playerList, #results #stats{
    float: left;
+   border: 1px solid black;
+   border-top: none;
+   padding: 10px;
+   height: 100%;
 }
 #results #playerList{
-   width: 30%;
+   width: 35%;
+   background: linear-gradient(#b0d6b0, #9cec9c);
+   font-size: 18px;
+   font-family: helvetica;
+   overflow-y: auto;
+}
+#playerList .playerCode{
+   border-bottom: 1px solid black;
+   padding: 10px;
+   cursor: pointer;
+}
+#playerList .playerCode:hover{
+   background-color: #c87d5d;
 }
 #results #stats{
-   width: 70%;
+   width: 65%;
+   background: linear-gradient(#6ba6f9, #1ca2e3);
 }
 #results::after{
    content: '';
